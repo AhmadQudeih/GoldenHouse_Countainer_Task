@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(38), topRight: Radius.circular(38)),
             ),
-            child: Column(
+            child: ListView(
               children: [
                 Container(
                   child: Text(
