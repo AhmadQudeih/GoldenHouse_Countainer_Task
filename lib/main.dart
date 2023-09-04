@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blue,
         appBar: AppBar(
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
                           BoxShadow(color: Color(0xffD0D0D0), blurRadius: 20)
                         ]),
                     child: TextField(
-                       keyboardType: TextInputType.number,
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'رقم الهاتف',
@@ -80,7 +81,7 @@ class MyApp extends StatelessWidget {
                     )),
                 SizedBox(height: 21),
                 Container(
-                  padding: EdgeInsets.only(right: 15),
+                    padding: EdgeInsets.only(right: 15),
                     height: 174,
                     decoration: BoxDecoration(
                         color: Colors.white,
